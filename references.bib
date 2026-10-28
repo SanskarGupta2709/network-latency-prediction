@@ -1,0 +1,120 @@
+% ---------------- Latency fundamentals and TCP RTT estimation ----------------
+@book{kurose2021,
+  author = {Kurose, James F. and Ross, Keith W.}, title = {Computer Networking: A Top-Down Approach},
+  edition = {8th}, publisher = {Pearson}, year = {2021}}
+@inproceedings{jacobson1988,
+  author = {Jacobson, Van}, title = {Congestion avoidance and control},
+  booktitle = {Proceedings of ACM SIGCOMM '88}, pages = {314--329}, year = {1988}}
+@inproceedings{karn1987,
+  author = {Karn, Phil and Partridge, Craig}, title = {Improving round-trip time estimates in reliable transport protocols},
+  booktitle = {Proceedings of ACM SIGCOMM '87}, pages = {2--7}, year = {1987}}
+@misc{rfc6298,
+  author = {Paxson, Vern and Allman, Mark and Chu, Jerry and Sargent, Matt}, title = {Computing {TCP}'s Retransmission Timer},
+  howpublished = {RFC 6298, Internet Engineering Task Force}, year = {2011}}
+% ---------------- Network distance / latency estimation ----------------
+@article{francis2001idmaps,
+  author = {Francis, Paul and Jamin, Sugih and Jin, Cheng and Jin, Yixin and Raz, Danny and Shavitt, Yuval and Zhang, Lixia},
+  title = {{IDMaps}: A global Internet host distance estimation service}, journal = {IEEE/ACM Transactions on Networking},
+  volume = {9}, number = {5}, pages = {525--540}, year = {2001}}
+@inproceedings{gummadi2002king,
+  author = {Gummadi, Krishna P. and Saroiu, Stefan and Gribble, Steven D.}, title = {King: Estimating latency between arbitrary {Internet} end hosts},
+  booktitle = {Proceedings of the 2nd ACM SIGCOMM Internet Measurement Workshop (IMW)}, year = {2002}}
+@inproceedings{ng2002gnp,
+  author = {Ng, T. S. Eugene and Zhang, Hui}, title = {Predicting {Internet} network distance with coordinates-based approaches},
+  booktitle = {Proceedings of IEEE INFOCOM 2002}, year = {2002}}
+@inproceedings{dabek2004vivaldi,
+  author = {Dabek, Frank and Cox, Russ and Kaashoek, Frans and Morris, Robert}, title = {Vivaldi: A decentralized network coordinate system},
+  booktitle = {Proceedings of ACM SIGCOMM 2004}, year = {2004}}
+@article{mao2006ides,
+  author = {Mao, Yun and Saul, Lawrence K. and Smith, Jonathan M.}, title = {{IDES}: An {Internet} distance estimation service for large networks},
+  journal = {IEEE Journal on Selected Areas in Communications}, volume = {24}, number = {12}, pages = {2273--2284}, year = {2006}}
+@inproceedings{madhyastha2006iplane,
+  author = {Madhyastha, Harsha V. and Isdal, Tomas and Piatek, Michael and Dixon, Colin and Anderson, Thomas and Krishnamurthy, Arvind and Venkataramani, Arun},
+  title = {{iPlane}: An information plane for distributed services}, booktitle = {Proceedings of the 7th USENIX Symposium on Operating Systems Design and Implementation (OSDI)}, year = {2006}}
+@misc{liao2012dmfsgd,
+  author = {Liao, Yongjun and Du, Wei and Geurts, Pierre and Leduc, Guy}, title = {{DMFSGD}: A decentralized matrix factorization algorithm for network distance prediction},
+  howpublished = {arXiv preprint arXiv:1201.1174}, year = {2012}}
+% ---------------- Queueing delay and bufferbloat ----------------
+@inproceedings{sundaresan2011broadband,
+  author = {Sundaresan, Srikanth and de Donato, Walter and Feamster, Nick and Teixeira, Renata and Crawford, Sam and Pescap{\`e}, Antonio},
+  title = {Broadband {Internet} performance: A view from the gateway}, booktitle = {Proceedings of ACM SIGCOMM 2011}, pages = {134--145}, year = {2011}}
+@article{gettys2012bufferbloat,
+  author = {Gettys, Jim and Nichols, Kathleen}, title = {Bufferbloat: Dark buffers in the {Internet}},
+  journal = {Communications of the ACM}, volume = {55}, number = {1}, pages = {57--65}, year = {2012}}
+@article{nichols2012codel,
+  author = {Nichols, Kathleen and Jacobson, Van}, title = {Controlling queue delay},
+  journal = {Communications of the ACM}, volume = {55}, number = {7}, pages = {42--50}, year = {2012}}
+@article{cardwell2017bbr,
+  author = {Cardwell, Neal and Cheng, Yuchung and Gunn, C. Stephen and Yeganeh, Soheil Hassas and Jacobson, Van},
+  title = {{BBR}: Congestion-based congestion control}, journal = {Communications of the ACM}, volume = {60}, number = {2}, pages = {58--66}, year = {2017}}
+@inproceedings{hoiland2016latency,
+  author = {H{\o}iland-J{\o}rgensen, Toke and Ahlgren, Bengt and Hurtig, Per and Brunstrom, Anna}, title = {Measuring latency variation in the {Internet}},
+  booktitle = {Proceedings of the 12th International Conference on emerging Networking EXperiments and Technologies (CoNEXT)}, pages = {473--480}, year = {2016}}
+% ---------------- ML prediction of network performance ----------------
+@inproceedings{mirza2007tcp,
+  author = {Mirza, Mariyam and Sommers, Joel and Barford, Paul and Zhu, Xiaojin}, title = {A machine learning approach to {TCP} throughput prediction},
+  booktitle = {Proceedings of ACM SIGMETRICS 2007}, year = {2007}}
+@inproceedings{sun2016cs2p,
+  author = {Sun, Yi and Yin, Xiaoqi and Jiang, Junchen and Sekar, Vyas and Lin, Fuyuan and Wang, Nanshu and Liu, Tao and Sinopoli, Bruno},
+  title = {{CS2P}: Improving video bitrate selection and adaptation with data-driven throughput prediction},
+  booktitle = {Proceedings of ACM SIGCOMM 2016}, pages = {272--285}, year = {2016}, doi = {10.1145/2934872.2934898}}
+@inproceedings{yan2020puffer,
+  author = {Yan, Francis Y. and Ayers, Hudson and Zhu, Chenzhi and Fouladi, Sadjad and Hong, James and Zhang, Keyi and Levis, Philip and Winstein, Keith},
+  title = {Learning in situ: A randomized experiment in video streaming}, booktitle = {Proceedings of the 17th USENIX Symposium on Networked Systems Design and Implementation (NSDI)}, year = {2020}}
+@inproceedings{narayanan2020lumos5g,
+  author = {Narayanan, Arvind and Ramadan, Eman and Mehta, Rishabh and Hu, Xinyue and Liu, Qingxu and Fezeu, Rostand A. K. and Dayalan, Udhaya Kumar and Verma, Saurabh and Ji, Peiqi and Li, Tao and Qian, Feng and Zhang, Zhi-Li},
+  title = {{Lumos5G}: Mapping and predicting commercial mmWave {5G} throughput}, booktitle = {Proceedings of the ACM Internet Measurement Conference (IMC)},
+  pages = {176--193}, year = {2020}, doi = {10.1145/3419394.3423629}}
+@inproceedings{raca2018lte,
+  author = {Raca, Darijo and Quinlan, Jason J. and Zahran, Ahmed H. and Sreenan, Cormac J.}, title = {Beyond throughput: A {4G LTE} dataset with channel and context metrics},
+  booktitle = {Proceedings of the 9th ACM Multimedia Systems Conference (MMSys)}, year = {2018}, doi = {10.1145/3204949.3208123}}
+@inproceedings{raca2020nr,
+  author = {Raca, Darijo and Leahy, Dylan and Sreenan, Cormac J. and Quinlan, Jason J.}, title = {Beyond throughput, the next generation: A {5G} dataset with channel and context metrics},
+  booktitle = {Proceedings of the 11th ACM Multimedia Systems Conference (MMSys)}, pages = {303--308}, year = {2020}, doi = {10.1145/3339825.3394938}}
+@inproceedings{hagos2019rtt,
+  author = {Hagos, Desta Haileselassie and Engelstad, Paal E. and Yazidi, Anis and Griwodz, Carsten}, title = {A deep learning approach to dynamic passive {RTT} prediction model for {TCP}},
+  booktitle = {Proceedings of the IEEE 38th International Performance Computing and Communications Conference (IPCCC)}, pages = {1--10}, year = {2019}, doi = {10.1109/IPCCC47392.2019.8958727}}
+@misc{mostafavi2025delay,
+  author = {Mostafavi, Samie and Sharma, Gourav Prateek and Traboulsi, Ahmad and Gross, James}, title = {Probabilistic delay forecasting in {5G} using recurrent and attention-based architectures},
+  howpublished = {arXiv preprint arXiv:2503.15297}, year = {2025}}
+@article{rusek2020routenet,
+  author = {Rusek, Krzysztof and Su{\'a}rez-Varela, Jos{\'e} and Almasan, Paul and Barlet-Ros, Pere and Cabellos-Aparicio, Albert},
+  title = {{RouteNet}: Leveraging graph neural networks for network modeling and optimization in {SDN}}, journal = {IEEE Journal on Selected Areas in Communications},
+  year = {2020}, doi = {10.1109/JSAC.2020.3000405}}
+@article{ferriol2023fermi,
+  author = {Ferriol-Galm{\'e}s, Miquel and Pailliss{\'e}, Jordi and Su{\'a}rez-Varela, Jos{\'e} and Rusek, Krzysztof and Xiao, Shihan and Shi, Xiang and Cheng, Xiangle and Barlet-Ros, Pere and Cabellos-Aparicio, Albert},
+  title = {{RouteNet-Fermi}: Network modeling with graph neural networks}, journal = {IEEE/ACM Transactions on Networking}, volume = {31}, number = {6}, pages = {3080--3095}, year = {2023}}
+@article{mestres2017kdn,
+  author = {Mestres, Albert and others}, title = {Knowledge-defined networking}, journal = {ACM SIGCOMM Computer Communication Review},
+  volume = {47}, number = {3}, pages = {2--10}, year = {2017}}
+@article{boutaba2018survey,
+  author = {Boutaba, Raouf and Salahuddin, Mohammad A. and Limam, Noura and Ayoubi, Sara and Shahriar, Nashid and Estrada-Solano, Felipe and Caicedo, Oscar M.},
+  title = {A comprehensive survey on machine learning for networking: Evolution, applications and research opportunities},
+  journal = {Journal of Internet Services and Applications}, volume = {9}, pages = {16}, year = {2018}}
+% ---------------- Learning methods and forecasting evaluation ----------------
+@article{breiman2001rf, author = {Breiman, Leo}, title = {Random forests}, journal = {Machine Learning}, volume = {45}, number = {1}, pages = {5--32}, year = {2001}}
+@article{friedman2001gbm, author = {Friedman, Jerome H.}, title = {Greedy function approximation: A gradient boosting machine},
+  journal = {Annals of Statistics}, volume = {29}, number = {5}, pages = {1189--1232}, year = {2001}}
+@inproceedings{ke2017lightgbm, author = {Ke, Guolin and Meng, Qi and Finley, Thomas and Wang, Taifeng and Chen, Wei and Ma, Weidong and Ye, Qiwei and Liu, Tie-Yan},
+  title = {{LightGBM}: A highly efficient gradient boosting decision tree}, booktitle = {Advances in Neural Information Processing Systems 30 (NeurIPS)}, year = {2017}}
+@article{hochreiter1997lstm, author = {Hochreiter, Sepp and Schmidhuber, J{\"u}rgen}, title = {Long short-term memory},
+  journal = {Neural Computation}, volume = {9}, number = {8}, pages = {1735--1780}, year = {1997}}
+@book{box2015arima, author = {Box, George E. P. and Jenkins, Gwilym M. and Reinsel, Gregory C. and Ljung, Greta M.},
+  title = {Time Series Analysis: Forecasting and Control}, edition = {5th}, publisher = {Wiley}, year = {2015}}
+@article{bergmeir2012cv, author = {Bergmeir, Christoph and Ben{\'i}tez, Jos{\'e} M.}, title = {On the use of cross-validation for time series predictor evaluation},
+  journal = {Information Sciences}, volume = {191}, pages = {192--213}, year = {2012}}
+@article{cerqueira2020eval, author = {Cerqueira, Vitor and Torgo, Luis and Mozeti{\v{c}}, Igor},
+  title = {Evaluating time series forecasting models: An empirical study on performance estimation methods}, journal = {Machine Learning}, volume = {109}, pages = {1997--2028}, year = {2020}}
+@article{hyndman2006accuracy, author = {Hyndman, Rob J. and Koehler, Anne B.}, title = {Another look at measures of forecast accuracy},
+  journal = {International Journal of Forecasting}, volume = {22}, number = {4}, pages = {679--688}, year = {2006}}
+@article{diebold1995dm, author = {Diebold, Francis X. and Mariano, Roberto S.}, title = {Comparing predictive accuracy},
+  journal = {Journal of Business \& Economic Statistics}, volume = {13}, number = {3}, pages = {253--263}, year = {1995}}
+@article{holm1979, author = {Holm, Sture}, title = {A simple sequentially rejective multiple test procedure},
+  journal = {Scandinavian Journal of Statistics}, volume = {6}, number = {2}, pages = {65--70}, year = {1979}}
+@article{wilcoxon1945, author = {Wilcoxon, Frank}, title = {Individual comparisons by ranking methods}, journal = {Biometrics Bulletin}, volume = {1}, number = {6}, pages = {80--83}, year = {1945}}
+@article{friedman1937, author = {Friedman, Milton}, title = {The use of ranks to avoid the assumption of normality implicit in the analysis of variance},
+  journal = {Journal of the American Statistical Association}, volume = {32}, number = {200}, pages = {675--701}, year = {1937}}
+@article{demsar2006stat, author = {Dem{\v{s}}ar, Janez}, title = {Statistical comparisons of classifiers over multiple data sets},
+  journal = {Journal of Machine Learning Research}, volume = {7}, pages = {1--30}, year = {2006}}
+@article{pedregosa2011sklearn, author = {Pedregosa, Fabian and others}, title = {Scikit-learn: Machine learning in {P}ython},
+  journal = {Journal of Machine Learning Research}, volume = {12}, pages = {2825--2830}, year = {2011}}
